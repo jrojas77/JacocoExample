@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('check out') {
       steps {
-        git(url: 'https://github.com/yli202/JacocoExample.git', branch: 'master')
+        git(url: 'https://github.com/yli202/JacocoExample', branch: 'master')
       }
     }
 
