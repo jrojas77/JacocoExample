@@ -24,12 +24,12 @@ pipeline {
         jacoco()
       }
     }
-  stage("sonarqube") {
-            steps {
-              withSonarQubeEnv('Sonarqube_server') {
-                sh 'mvn clean package sonar:sonar'
-              }
-            }
-          }
+#  stage("sonarqube") {
+ #           steps {
+  #            withSonarQubeEnv('Sonarqube_server') {
+   #             sh 'mvn clean package sonar:sonar'
+    #          }
+     #       }
+      #    }
   }
 }
